@@ -1,0 +1,129 @@
+ramses carvalho
+
+atividae google classroom
+
+1)
+public class App {
+    public static void main(String[] args) throws Exception {
+        for(int n = 150; n <= 300; n++){
+            System.out.println(n);
+        }
+    }
+}
+
+2)
+public class App {
+    public static void main(String[] args) throws Exception {
+        int s = 0;
+        for(int n = 1; n <= 1000; n++){
+            s = s + n;
+        }System.out.println(s);
+    }
+}
+
+3)
+public class App {
+    public static void main(String[] args) throws Exception {
+        for(int n = 1; n <= 1000; n++){
+            if(n%3==0){
+                System.out.println(n);
+            }
+        }
+    }
+}
+
+4)
+public class App {
+    
+    static int fat(int i){
+        if(i==0){
+            return 1;
+        }return (i * fat(i-1));
+    }
+    public static void main(String[] args) throws Exception {
+        for(int n = 1; n <= 10; n++){
+            int s = fat(n);
+            System.out.println(s);
+        }
+    }
+}
+
+5)
+public class App {
+    public static void main(String[] args) throws Exception {
+        int fat = 1;
+        for(int n = 1; n <= 10; n++){
+           fat = fat * n;
+           System.out.println(fat);
+       }
+    }
+}
+6)
+public class App {
+    public static void main(String[] args) throws Exception {
+        long fat = 1;
+        for(long n = 1; n <= 30; n++){
+           fat = fat * n;
+           System.out.println(fat);
+       }
+    }
+}
+Mesmo no tipo long, o valor pode quebrar a quantidade q o tipo armazena
+
+7)
+public class App {
+    public static void main(String[] args) throws Exception {
+        double fib[];
+        fib = new double[100];
+        fib[0] = 0;
+        fib[1] = 1;
+        fib[2] = 1;
+        for(int n = 3; n <= 100; n++){
+            fib[n] = fib[(n-1)] + fib[(n-2)];
+        }
+        for(double n: fib){
+            System.out.println(n);
+        }
+    }
+}
+
+8)
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner entrada = new Scanner(System.in);
+        int n;
+
+        System.out.println("Digite um numero: ");
+        n = entrada.nextInt();
+        while(true){
+            if(n%2==0){
+                n = n/2;
+                System.out.println(n);
+                if(n == 1){
+                    break;
+                }
+            }
+            if(n%2!=0){
+                n = 3*n+1;
+                System.out.println(n);
+                if(n == 1){
+                    break;
+                }
+            }
+        }
+    }
+}
+
+10)
+public class App {
+    public static void main(String[] args) throws Exception {
+       for(int i = 1; i < 5; i++){
+           for(int n = 1; n <= i; n++){
+               System.out.print(n*i);
+               System.out.print(" ");
+           }System.out.println();
+       }
+    }
+}
